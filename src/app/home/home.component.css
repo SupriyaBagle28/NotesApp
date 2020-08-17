@@ -1,0 +1,19 @@
+h1{
+    padding-left: 40%;
+    padding-top: 2%;
+}
+.button{
+    padding-top: 20%;
+    padding-left: 80%;
+}
+
+.body{
+    height: 100%;
+    /* background-color: pink; */
+}
+
+.card{
+    max-width: 400px;
+    margin-left: 40px;
+    /* background-color: pink; */
+}

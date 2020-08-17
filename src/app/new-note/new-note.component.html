@@ -1,0 +1,20 @@
+<h2>Write Note!!</h2>
+
+<form #f="ngForm">
+  
+<div class="form-group">
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput ngModel name="title" placeholder="Title" >
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <mat-label>Content</mat-label>
+      <textarea matInput ngModel name="content" placeholder="Content"></textarea>
+    </mat-form-field>
+
+   <button mat-button (click)="save(f.value)">Save</button>
+   </div>
+   
+  </form>
+

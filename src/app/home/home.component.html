@@ -1,0 +1,21 @@
+<div class="body">
+    <div class="row">
+        <ng-container *ngFor="let res of response ; let i=index">
+            <div class="col-md-3">
+                <hr>
+                <mat-card class="Card" style="width: 15rim; background-color:blanchedalmond;">
+                    <div class="card-body">
+                        <h3 class="card-title"> {{res.title}}</h3>
+                        <p class="card-text"> {{res.content}}</p>
+                        <a class="btn btn-default" [routerLink]="['/edit']">Edit</a>
+                        <button mat-button (click)="delete()">Delete</button>
+                    </div>
+                </mat-card>
+            </div>
+        </ng-container>
+    </div>
+
+    <div class="button">
+        <button mat-raised-button (click)="newNotes()">NewNote</button><br><br>
+    </div>
+</div>
